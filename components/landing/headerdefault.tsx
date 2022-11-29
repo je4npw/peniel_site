@@ -32,7 +32,7 @@ export default function HeaderDefault() {
   const [overlay, setOverlay] = useState(<Overlay />);
   return (
     <>
-      <Container maxW={"5xl"}>
+      <Container maxW={"5xl"} pt={14}>
         <Stack
           textAlign={"center"}
           align={"center"}
