@@ -1,34 +1,41 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
-  Avatar,
   Box,
   Button,
   Flex,
+  Image,
   Stack,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { PagesMenu } from "./pagesmenu";
-import { UserMenu } from "./usermenu";
 
 export function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+    <Box
+      zIndex={1}
+      bg={useColorModeValue("gray.100", "gray.900")}
+      px={4}
+      position="fixed"
+      width={"100%"}
+    >
       <Flex h={20} alignItems={"center"} justifyContent={"space-between"}>
-        <Flex alignItems={"center"}>
-          <Stack direction={"row"} spacing={10}>
-            <Avatar src="logotipo.png" />
-            <PagesMenu />
-          </Stack>
+        <Flex alignItems={"center"} h={"12"}>
+          <PagesMenu />
         </Flex>
-
+        <Stack direction={"row"} spacing={10}>
+          {colorMode === "light" ? (
+            <Image h={16} src="logo_transparente_preta.png" />
+          ) : (
+            <Image h={16} src="logo_transparente_branca.png" />
+          )}
+        </Stack>
         <Flex alignItems={"center"}>
           <Stack direction={"row"} spacing={7}>
             <Button onClick={toggleColorMode} size={"lg"}>
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
-            {/* <UserMenu /> */}
           </Stack>
         </Flex>
       </Flex>

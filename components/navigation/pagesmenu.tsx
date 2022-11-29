@@ -1,23 +1,21 @@
+import Link from "next/link";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
-  IconButton,
+  Button,
   Menu,
   MenuButton,
+  MenuDivider,
   MenuItem,
   MenuList,
 } from "@chakra-ui/react";
-import Link from "next/link";
 
 export function PagesMenu() {
   return (
     <Menu isLazy>
-      <MenuButton
-        boxSize={"inherit"}
-        as={IconButton}
-        aria-label="Opções"
-        icon={<HamburgerIcon />}
-        variant="outline"
-      />
+      <MenuButton as={Button} w={"16"} h={"12"} aria-label="Site Menu">
+        <HamburgerIcon />
+      </MenuButton>
+
       <MenuList>
         <Link href={"/"}>
           <MenuItem>
@@ -27,6 +25,38 @@ export function PagesMenu() {
         <Link href={"/about"}>
           <MenuItem>
             <span>Sobre</span>
+          </MenuItem>
+        </Link>
+        <MenuDivider />
+        <Link href={"/about"}>
+          <MenuItem>
+            <span>Youtube</span>
+          </MenuItem>
+        </Link>
+        <Link href={"/about"}>
+          <MenuItem>
+            <span>Facebook</span>
+          </MenuItem>
+        </Link>
+        <Link href={"/about"}>
+          <MenuItem>
+            <span>Instagram</span>
+          </MenuItem>
+        </Link>
+        <Link href={"/about"}>
+          <MenuItem>
+            <span>WhatsApp</span>
+          </MenuItem>
+        </Link>
+        <Link href={"/about"}>
+          <MenuItem>
+            <span>Twitter</span>
+          </MenuItem>
+        </Link>
+        <MenuDivider />
+        <Link href={"/about"}>
+          <MenuItem>
+            <span>Localização</span>
           </MenuItem>
         </Link>
       </MenuList>
