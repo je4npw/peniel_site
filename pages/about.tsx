@@ -48,7 +48,7 @@ export default function About() {
             fontWeight={"medium"}
             color={useColorModeValue("gray.500", "gray.400")}
           >
-            "Jacó chamou àquele lugar&nbsp;
+            Jacó chamou àquele lugar &nbsp;
             <chakra.strong color={useColorModeValue("gray.700", "gray.50")}>
               Peniel,&nbsp;
             </chakra.strong>
