@@ -34,7 +34,7 @@ export function History() {
         <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacing={10}>
           {objectives.map((objective) => (
             <HStack key={objective.id} align={"top"}>
-              <Box color={useColorModeValue("cyan.600", "cyan.300")} px={2}>
+              <Box color={"cyan.600"} px={2}>
                 <Icon as={InfoOutlineIcon} />
               </Box>
               <VStack align={"start"}>

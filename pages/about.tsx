@@ -3,6 +3,7 @@ import {
   chakra,
   Container,
   Flex,
+  HStack,
   SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -47,10 +48,10 @@ export default function About() {
             fontWeight={"medium"}
             color={useColorModeValue("gray.500", "gray.400")}
           >
-            "Jacó chamou àquele lugar{" "}
+            "Jacó chamou àquele lugar&nbsp;
             <chakra.strong color={useColorModeValue("gray.700", "gray.50")}>
-              Peniel,{" "}
-            </chakra.strong>{" "}
+              Peniel,&nbsp;
+            </chakra.strong>
             e disse: <br />
             “Vi Deus face a face, e continuo vivo!”
             <br />
@@ -67,7 +68,9 @@ export default function About() {
           mx={"auto"}
         >
           {cardsText.map((cardInfo, index) => (
-            <AboutCard {...cardInfo} index={index} />
+            <HStack key={cardInfo.id} align={"top"}>
+              <AboutCard {...cardInfo} index={index} />
+            </HStack>
           ))}
         </SimpleGrid>
       </Flex>

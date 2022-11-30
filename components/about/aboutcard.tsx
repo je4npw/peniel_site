@@ -1,6 +1,7 @@
 import { Avatar, Flex, useColorModeValue, chakra } from "@chakra-ui/react";
 
 interface SobreCardProps {
+  id: number;
   name: string;
   role: string;
   content: string;
@@ -18,7 +19,7 @@ const backgrounds = [
 ];
 
 export function AboutCard(props: SobreCardProps) {
-  const { name, role, content, content2, content3, avatar, index } = props;
+  const { id, name, role, content, content2, content3, avatar, index } = props;
   return (
     <Flex
       boxShadow={"lg"}

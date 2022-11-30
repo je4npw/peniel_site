@@ -26,9 +26,17 @@ export function Navbar() {
         </Flex>
         <Stack direction={"row"} spacing={10}>
           {colorMode === "light" ? (
-            <Image h={16} src="logo_transparente_preta.png" />
+            <Image
+              h={16}
+              src="logo_transparente_preta.png"
+              alt="Logo Transparente Preta"
+            />
           ) : (
-            <Image h={16} src="logo_transparente_branca.png" />
+            <Image
+              h={16}
+              src="logo_transparente_branca.png"
+              alt="Logo Transparente Branca"
+            />
           )}
         </Stack>
         <Flex alignItems={"center"}>

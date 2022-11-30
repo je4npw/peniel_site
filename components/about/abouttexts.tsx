@@ -1,17 +1,20 @@
 export const cardsText = [
   {
+    id: 1,
     name: "Missão",
     role: "O que fazemos",
     content: "Cuidar, treinar e equipar pessoas para o Ministério Cristão.",
     avatar: "valores.png",
   },
   {
+    id: 2,
     name: "Visão",
     role: "Onde queremos chegar",
     content: "Ser referência no cuidado e reinserção do cidadão.",
     avatar: "visao.png",
   },
   {
+    id: 3,
     name: "Valores",
     role: "O que prezamos",
     content: "Cristianismo",
@@ -20,6 +23,7 @@ export const cardsText = [
     avatar: "values.png",
   },
   {
+    id: 4,
     name: "Confissão",
     role: "No que acreditamos",
     content:
