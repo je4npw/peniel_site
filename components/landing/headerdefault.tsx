@@ -17,6 +17,7 @@ import {
   ModalFooter,
   Image,
   Center,
+  VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
 
@@ -88,16 +89,21 @@ export default function HeaderDefault() {
           <ModalCloseButton />
           <ModalBody>
             <Center>
-              <Image src="./qrcode.webp" alt="Qrcode para Pix" />
+              <VStack>
+                <Image src="./qrcode.webp" alt="Qrcode para Pix" />
+                <Text size={"sm"} color={"gray.900"}>
+                  Ou Pix telefone - 47 984481453
+                </Text>
+              </VStack>
             </Center>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme="cyan" mr={3} onClick={onClose}>
-              Fechar
-            </Button>
             <Link href={"/help"}>
               <Button colorScheme={"blue"} mr={3}>
-                Mais
+                Outras formas
+              </Button>
+              <Button colorScheme="cyan" mr={3} onClick={onClose}>
+                Fechar
               </Button>
             </Link>
           </ModalFooter>

@@ -1,3 +1,4 @@
+import { AspectRatio } from "@chakra-ui/react";
 import Footer from "../components/footer/footer";
 import { VideoCards } from "../components/landing/cards";
 import HeaderDefault from "../components/landing/headerdefault";
@@ -32,7 +33,6 @@ export default function Content() {
         imageLink="imagecard2.jpeg"
         alt="Pessoas reunidas em uma igreja"
       />
-      <Footer />
     </>
   );
 }
