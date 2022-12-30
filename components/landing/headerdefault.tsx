@@ -52,8 +52,8 @@ export default function HeaderDefault() {
           </Heading>
           <Text color={"gray.500"} maxW={"3xl"} fontSize="xl">
             A Associação é a responsável pelo Ministério Casa Peniel, que é um
-            lugar de encontro Deus, para uma mudança de mente e estilo de vida,
-            com o objetivo de treinar e equipar pessoas para o Ministério
+            lugar de encontro com Deus, para uma mudança de mente e estilo de
+            vida, com o objetivo de treinar e equipar pessoas para o Ministério
             Cristão.
           </Text>
           <Stack spacing={6} direction={"row"}>
