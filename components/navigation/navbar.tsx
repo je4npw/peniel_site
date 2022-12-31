@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
   Box,
@@ -25,19 +26,21 @@ export function Navbar() {
           <PagesMenu />
         </Flex>
         <Stack direction={"row"} spacing={10}>
-          {colorMode === "light" ? (
-            <Image
-              h={16}
-              src="logo_transparente_preta.png"
-              alt="Logo Transparente Preta"
-            />
-          ) : (
-            <Image
-              h={16}
-              src="logo_transparente_branca.png"
-              alt="Logo Transparente Branca"
-            />
-          )}
+          <Link href={"/"}>
+            {colorMode === "light" ? (
+              <Image
+                h={16}
+                src="logo_transparente_preta.png"
+                alt="Logo Transparente Preta"
+              />
+            ) : (
+              <Image
+                h={16}
+                src="logo_transparente_branca.png"
+                alt="Logo Transparente Branca"
+              />
+            )}
+          </Link>
         </Stack>
         <Flex alignItems={"center"}>
           <Stack direction={"row"} spacing={7}>

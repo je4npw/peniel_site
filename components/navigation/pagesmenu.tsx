@@ -19,6 +19,7 @@ import {
   FaYoutube,
   FaLocationArrow,
   FaSpotify,
+  FaHandshake,
 } from "react-icons/fa";
 
 export function PagesMenu() {
@@ -37,6 +38,11 @@ export function PagesMenu() {
         <Link href={"/about"}>
           <MenuItem icon={<FaBuffer />}>
             <span>Sobre</span>
+          </MenuItem>
+        </Link>
+        <Link href={"/help"}>
+          <MenuItem icon={<FaHandshake />}>
+            <span>Como Ajudar</span>
           </MenuItem>
         </Link>
         <MenuDivider />
